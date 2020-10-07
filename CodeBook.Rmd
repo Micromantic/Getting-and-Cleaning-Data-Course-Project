@@ -1,0 +1,441 @@
+---
+  title: "Codebook"
+  author: "Daniel Pestana"
+  date: "10/06/2020"
+  output:
+  html_document:
+  keep_md: yes
+---
+  
+  ## Project Description
+  This repository contains my submission for the  Getting and Cleaning Data Course Project.
+
+###Collection of the raw data
+From the Ssmartlab ReadMe file:
+  The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+###Notes on the original (raw) data 
+From the Smartlab ReadMe file:
+  For each record it is provided:
+
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+##Description of the variables in the means.txt file
+From the Smartlab ReadMe file:
+  
+  The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+  
+
+The tidy data contains the  mean and standard deviation for each measurement of the dataset.
+- Dimensions: 180x81
+- Summary of the data
+
+###Variable 1 
+"subjectid"
+- Class: integer
+- Identifies the subject of the observation
+
+###Variable 2
+"activity"
+- Class: character
+- Identifies the activity being measured
+
+###Variable 3
+"tBodyAccmeanX"
+- Class: numeric
+- Mean of body acceleration time in X
+
+###Variable 4
+"tBodyAccmeanY"
+- Class: numeric
+- Mean of body acceleration time in Y
+
+###Variable 5
+"tBodyAccmeanZ"
+- Class: numeric
+- Mean of body acceleration time in Z
+
+###Variable 6
+"tBodyAccstdX"
+- Class: numeric
+- Standard deviation of body acceleration time in X
+
+###Variable 7
+"tBodyAccstdY"
+- Class: numeric
+- Standard deviation of body acceleration time in Y
+
+###Variable 8
+"tBodyAccstdZ"
+- Class: numeric
+- Standard deviation of body acceleration time in Z
+
+###Variable 9
+"tGravityAccmeanX"
+- Class: numeric
+- Mean of gravity acceleration time in X
+
+###Variable 10
+"tGravityAccmeanY"
+- Class: numeric
+- Mean of gravity acceleration time in Y
+
+###Variable 11
+"tGravityAccmeanZ"
+- Class: numeric
+- Mean of gravity acceleration time in Z
+
+###Variable 12
+"tGravityAccstdX"
+- Class: numeric
+- Standard deviation of gravity acceleration time in X
+
+###Variable 13
+"tGravityAccstdY"
+- Class: numeric
+- Standard deviation of gravity acceleration time in Y
+
+###Variable 14
+"tGravityAccstdZ"
+- Class: numeric
+- Standard deviation of gravity acceleration time in Z
+
+###Variable 15
+"tBodyAccJerkmeanX"
+- Class: numeric
+- Mean of body acceleration jerk time in X
+
+###Variable 16
+"tBodyAccJerkmeanY"
+- Class: numeric
+- Mean of body acceleration jerk time in Y
+
+###Variable 17
+"tBodyAccJerkmeanZ"
+- Class: numeric
+- Mean of body acceleration jerk time in Z
+
+###Variable 18
+"tBodyAccJerkstdX"
+- Class: numeric
+- Standard deviation of body acceleration jerk time in X
+
+###Variable 19
+"tBodyAccJerkstdY"
+- Class: numeric
+- Standard deviation of body acceleration jerk time in Y
+
+###Variable 20
+"tBodyAccJerkstdZ"
+- Class: numeric
+- Standard deviation of body acceleration jerk time in Z
+
+###Variable 21
+"tBodyGyromeanX"
+- Class: numeric
+- Mean of body angular velocity time in X
+
+###Variable 22
+"tBodyGyromeanY"
+- Class: numeric
+- Mean of body angular velocity time in Y
+
+###Variable 23
+"tBodyGyromeanZ"
+- Class: numeric
+- Mean of body angular velocity time in Z
+
+###Variable 24
+"tBodyGyrostdX"
+- Class: numeric
+- Standard deviation of body angular velocity time in X
+
+###Variable 25
+"tBodyGyrostdY"
+- Class: numeric
+- Standard deviation of body angular velocity time in Y
+
+###Variable 26
+"tBodyGyrostdZ"
+- Class: numeric
+- Standard deviation of body angular velocity time in Z
+
+###Variable 27
+"tBodyGyroJerkmeanX"
+- Class: numeric
+- Mean of body angular velocity jerk time in X
+
+###Variable 28
+"tBodyGyroJerkmeanY"
+- Class: numeric
+- Mean of body angular velocity jerk time in Y
+
+###Variable 29
+"tBodyGyroJerkmeanZ"
+- Class: numeric
+- Mean of body angular velocity jerk time in Z
+
+###Variable 30
+"tBodyGyroJerkstdX"
+- Class: numeric
+- Standard deviation of body angular velocity jerk time in X
+
+###Variable 31
+"tBodyGyroJerkstdY"
+- Class: numeric
+- Standard deviation of body angular velocity jerk time in Y
+
+###Variable 32
+"tBodyGyroJerkstdZ"
+- Class: numeric
+- Standard deviation of body angular velocity jerk time in Z
+
+###Variable 33
+"tBodyAccMagmean"
+- Class: numeric
+- Mean of body acceleration magnitude time
+
+###Variable 34
+"tBodyAccMagstd"
+- Class: numeric
+- Standard deviation of body acceleration magnitude time
+
+###Variable 35
+"tGravityAccMagmean"
+- Class: numeric
+- Mean of gravity acceleration magnitude time
+
+###Variable 36
+"tGravityAccMagstd"
+- Class: numeric
+- Standard deviation of gravity acceleration magnitude time
+
+###Variable 37
+"tBodyAccJerkMagmean"
+- Class: numeric
+- Mean of body acceleration jerk magnitude time
+
+###Variable 38
+"tBodyAccJerkMagstd"
+- Class: numeric
+- Standard deviation of body acceleration jerk magnitude time
+
+###Variable 39
+"tBodyGyroMagmean"
+- Class: numeric
+- Mean of body angular velocity magnitude time
+
+###Variable 40
+"tBodyGyroMagstd"
+- Class: numeric
+- Standard deviation of body angular velocity magnitude time
+
+###Variable 41
+"tBodyGyroJerkMagmean"
+- Class: numeric
+- Mean of body angular velocity jerk magnitude time
+
+###Variable 42
+"tBodyGyroJerkMagstd"
+- Class: numeric
+- Standard deviation of body angular velocity jerk magnitude time
+
+###Variable 43
+"fBodyAccmeanX"
+- Class: numeric
+- Mean of body acceleration frequency in X
+
+###Variable 44
+"fBodyAccmeanY"
+- Class: numeric
+- Mean of body acceleration frequency in Y
+
+###Variable 45
+"fBodyAccmeanZ"
+- Class: numeric
+- Mean of body acceleration frequency in Z
+
+###Variable 46
+"fBodyAccstdX"
+- Class: numeric
+- Standard deviation of body acceleration frequency in X
+
+###Variable 47
+"fBodyAccstdY"
+- Class: numeric
+- Standard deviation of body acceleration frequency in Y
+
+###Variable 48
+"fBodyAccstdZ"
+- Class: numeric
+- Standard deviation of body acceleration frequency in Z
+
+###Variable 49
+"fBodyAccmeanFreqX"
+- Class: numeric
+- Mean of body acceleration frequency weighted average in X
+
+###Variable 50
+"fBodyAccmeanFreqY"
+- Class: numeric
+- Mean of body acceleration frequency weighted average in Y
+
+###Variable 51
+"fBodyAccmeanFreqZ"
+- Class: numeric
+- Mean of body acceleration frequency weighted average in Z
+
+###Variable 52
+"fBodyAccJerkmeanX"
+- Class: numeric
+- Mean of body acceleration jerk frequency in X
+
+###Variable 53
+"fBodyAccJerkmeanY"
+- Class: numeric
+- Mean of body acceleration jerk frequency in Y
+
+###Variable 54
+"fBodyAccJerkmeanZ"
+- Class: numeric
+- Mean of body acceleration jerk frequency in Z
+
+###Variable 55
+"fBodyAccJerkstdX"
+- Class: numeric
+- Standard deviation of body acceleration jerk frequency in X
+
+###Variable 56
+"fBodyAccJerkstdY"
+- Class: numeric
+- Standard deviation of body acceleration jerk frequency in Y
+
+###Variable 57
+"fBodyAccJerkstdZ"
+- Class: numeric
+- Standard deviation of body acceleration jerk frequency in Z
+
+###Variable 58
+"fBodyAccJerkmeanFreqX"
+- Class: numeric
+- Mean of body acceleration jerk frequency weighted average in X
+
+###Variable 59
+"fBodyAccJerkmeanFreqY"
+- Class: numeric
+- Mean of body acceleration jerk frequency weighted average in Y
+
+###Variable 60
+"fBodyAccJerkmeanFreqZ"
+- Class: numeric
+- Mean of body acceleration jerk frequency weighted average in Z
+
+###Variable 61
+"fBodyGyromeanX"
+- Class: numeric
+- Mean of body angular velocity frequency in X
+
+###Variable 62
+"fBodyGyromeanY"
+- Class: numeric
+- Mean of body angular velocity frequency in Y
+
+###Variable 63
+"fBodyGyromeanZ"
+- Class: numeric
+- Mean of body angular velocity frequency in Z
+
+###Variable 64
+"fBodyGyrostdX"
+- Class: numeric
+- Standard deviation of body angular velocity frequency in X
+
+###Variable 65
+"fBodyGyrostdY"
+- Class: numeric
+- Standard deviation of body angular velocity frequency in Y
+
+###Variable 66
+"fBodyGyrostdZ"
+- Class: numeric
+- Standard deviation of body angular velocity frequency in Z
+
+###Variable 67
+"fBodyGyromeanFreqX"
+- Class: numeric
+- Mean of body angular velocity frequency weighted average in X
+
+###Variable 68
+"fBodyGyromeanFreqY"
+- Class: numeric
+- Mean of body angular velocity frequency weighted average in Y
+
+###Variable 69
+"fBodyGyromeanFreqZ"
+- Class: numeric
+- Mean of body angular velocity frequency weighted average in Z
+
+###Variable 70
+"fBodyAccMagmean"
+- Class: numeric
+- Mean of body acceleration magnitude frequency
+
+###Variable 71
+"fBodyAccMagstd"
+- Class: numeric
+- Standard deviation of body acceleration magnitude frequency
+
+###Variable 72
+"fBodyAccMagmeanFreq"
+- Class: numeric
+- Mean of body acceleration magnitude frequency weighted average
+
+###Variable 73
+"fBodyBodyAccJerkMagmean"
+- Class: numeric
+- Mean of body acceleration jerk magnitude frequency
+
+###Variable 74
+"fBodyBodyAccJerkMagstd"
+- Class: numeric
+- Standard deviation of body acceleration jerk magnitude frequency
+
+###Variable 75
+"fBodyBodyAccJerkMagmeanFreq"
+- Class: numeric
+- Mean of body acceleration jerk magnitude frequency weighted average
+
+###Variable 76
+"fBodyBodyGyroMagmean"
+- Class: numeric
+- Mean of body angular velocity magnitude frequency
+
+###Variable 77
+"fBodyBodyGyroMagstd"
+- Class: numeric
+- Standard deviation of body angular velocity magnitude frequency
+
+###Variable 78
+"fBodyBodyGyroMagmeanFreq"
+- Class: numeric
+- Mean of body angular velocity magnitude frequency weighted average
+
+###Variable 79
+"fBodyBodyGyroJerkMagmean"
+- Class: numeric
+- Mean of body angular velocity jerk magnitude frequency
+
+###Variable 80
+"fBodyBodyGyroJerkMagstd"
+- Class: numeric
+- Standard deviation of body angular velocity jerk magnitude frequency
+
+###Variable 81
+"fBodyBodyGyroJerkMagmeanFreq"
+- Class: numeric
+- Mean of body angular velocity jerk magnitude frequency weighted average
